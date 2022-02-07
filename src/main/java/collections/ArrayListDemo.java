@@ -9,8 +9,9 @@ public class ArrayListDemo {
 
     public static void main(String[] args){
 
-
         List<String> list = new LinkedList<>(Arrays.asList("A", "B", "C", "D"));
+
+        list.removeIf(s -> s.equalsIgnoreCase("A"));
 
       Iterator<String> iterator = list.iterator();
 
